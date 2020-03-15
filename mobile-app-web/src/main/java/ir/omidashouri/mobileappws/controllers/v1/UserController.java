@@ -7,6 +7,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.security.SecurityRequirements;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import ir.omidashouri.mobileappws.exceptions.UserServiceException;
 import ir.omidashouri.mobileappws.mapper.AddressRestMapper;
@@ -18,6 +20,7 @@ import ir.omidashouri.mobileappws.models.response.AddressRest;
 import ir.omidashouri.mobileappws.models.response.ErrorMessages;
 import ir.omidashouri.mobileappws.models.response.OperationStatusModel;
 import ir.omidashouri.mobileappws.models.response.UserRest;
+
 import ir.omidashouri.mobileappws.services.AddressService;
 import ir.omidashouri.mobileappws.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -71,8 +74,12 @@ public class UserController {
 /*    @ApiImplicitParams({
             @ApiImplicitParam(name = "authorization", value = "${userController.authorization.header.description}", paramType = "header")
     })*/
-@Operation(description = "Find person by e-mail", responses = {
+
+@Operation(description = "Find person by e-mail",
+        security =  @SecurityRequirement(name = "bearer-jwt"),
+        responses = {
         @ApiResponse(content = @Content(schema = @Schema(implementation = UserDto.class)), responseCode = "200"),
+        @ApiResponse(responseCode = "403", description = "Access Denied"),
         @ApiResponse(responseCode = "404", description = "Person with such e-mail doesn't exists")})
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE , MediaType.APPLICATION_XML_VALUE})
     public List<UserRest> getUsers(@RequestParam(value = "page",defaultValue = "1") int pageValue
