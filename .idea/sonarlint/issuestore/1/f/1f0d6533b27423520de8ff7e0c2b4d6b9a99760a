@@ -1,0 +1,19 @@
+
+Vsquid:S1854j"@Remove this useless assignment to local variable "returnedUser".(®½Û	
+Vsquid:S1854œ"?Remove this useless assignment to local variable "userDtoList".(ÙÍêw
+Gsquid:S1481y"1Remove this unused "returnedUser" local variable.(®½Û	
+bsquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(š×
+csquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(¨Á“Ü
+hsquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(•³ëüúÿÿÿÿ
+Ê%squid:RedundantThrowsDeclarationCheckÇ"’Remove the declaration of thrown exception 'org.springframework.security.core.userdetails.UsernameNotFoundException' which is a runtime exception.(°Ô¦üıÿÿÿÿ
+bsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(Ãø•‹
+gsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(ÅãÓŸÿÿÿÿÿ
+gsquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(åõ·Èşÿÿÿÿ
+[squid:S1155Ë">Use isEmpty() to check whether the collection is empty or not.(æŒúÿÿÿÿ
+Zsquid:S1155X">Use isEmpty() to check whether the collection is empty or not.(æŒúÿÿÿÿ
+gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(éıûÿÿÿÿ
+Vsquid:S1854y"@Remove this useless assignment to local variable "returnedUser".(®½Û	
+gsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ñ¦£Şùÿÿÿÿ
+vsquid:S1488\"_Immediately return this expression instead of assigning it to the temporary variable "userDto".(Â¢½ñ
+Vsquid:S2589•"7Remove this expression which always evaluates to "true"(µ„úĞ8•½•õ‹.
+Ssquid:S2209G"5Change this instance-reference to a static reference.(Ûş¡¡8•½•õ‹.

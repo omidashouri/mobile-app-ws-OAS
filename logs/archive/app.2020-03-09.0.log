@@ -1,0 +1,1091 @@
+2020-03-09 09:44:12,480 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1121867 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 09:44:12,643 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 09:44:12,643 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 09:44:14,496 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 09:44:14,496 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 09:44:14,497 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 09:44:14,498 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 09:44:14,498 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 09:44:23,276 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 09:44:23,667 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 346ms. Found 3 JPA repository interfaces.
+2020-03-09 09:44:27,005 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,180 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$83af50a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,193 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,197 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,200 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,224 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,225 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$dda3df7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,229 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,230 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,232 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,244 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,245 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,247 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,249 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,250 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,257 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,258 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,397 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,399 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,409 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:27,501 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:44:28,906 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 09:44:29,141 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 14643 ms
+2020-03-09 09:44:32,083 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 09:44:42,891 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 09:44:43,347 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 09:44:43,348 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 09:44:43,350 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:44:43,653 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:44:43,727 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:44:43,760 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 09:44:43,812 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 09:44:43,846 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 09:44:43,894 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 09:44:43,922 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 09:44:45,054 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 09:44:45,273 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 09:44:45,603 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7eb96f20, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c9f2a21, org.springframework.security.web.header.HeaderWriterFilter@44ab9243, org.springframework.web.filter.CorsFilter@72be129f, org.springframework.security.web.authentication.logout.LogoutFilter@600bb6c5, ir.omidashouri.mobileappws.security.AuthenticationFilter@15bc19af, ir.omidashouri.mobileappws.security.AuthorizationFilter@2cc9cf59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73fbc85a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74fdea7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19bc658f, org.springframework.security.web.session.SessionManagementFilter@793222b, org.springframework.security.web.access.ExceptionTranslationFilter@229b5235, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53f8cc30]
+2020-03-09 09:44:46,308 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 09:44:46,329 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 39.991 seconds (JVM running for 46.705)
+2020-03-09 09:44:46,691 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(11)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 09:44:46,752 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(11)-172.17.71.110] Completed initialization in 60 ms
+2020-03-09 09:50:02,960 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 09:50:02,962 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 09:50:02,963 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 09:50:02,963 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 09:50:10,267 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1122782 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 09:50:10,270 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 09:50:10,271 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 09:50:10,315 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 09:50:10,315 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 09:50:10,315 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 09:50:10,315 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 09:50:10,315 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 09:50:11,229 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 09:50:11,280 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46ms. Found 3 JPA repository interfaces.
+2020-03-09 09:50:11,587 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,606 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$76b13afa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,617 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,620 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,623 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,627 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,628 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$d0a5c9cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,632 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,633 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,634 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,645 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,646 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,648 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,649 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,650 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,657 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,658 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,659 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,661 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,670 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,690 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 09:50:11,851 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 09:50:11,907 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1591 ms
+2020-03-09 09:50:12,028 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 09:50:12,781 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 09:50:12,787 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 09:50:12,787 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 09:50:12,807 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:50:12,854 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:50:12,890 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 09:50:12,923 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 09:50:12,958 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 09:50:12,999 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 09:50:13,067 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 09:50:13,095 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 09:50:13,629 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 09:50:13,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 09:50:13,852 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@227590f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@38580548, org.springframework.security.web.header.HeaderWriterFilter@4293451e, org.springframework.web.filter.CorsFilter@78fef78e, org.springframework.security.web.authentication.logout.LogoutFilter@5cc64a7f, ir.omidashouri.mobileappws.security.AuthenticationFilter@7ab42a0d, ir.omidashouri.mobileappws.security.AuthorizationFilter@7ef79180, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cd575be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f2a796c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@700b6cbe, org.springframework.security.web.session.SessionManagementFilter@66e45ebf, org.springframework.security.web.access.ExceptionTranslationFilter@1fd96175, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@449be8cc]
+2020-03-09 09:50:14,249 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 09:50:14,252 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 4.408 seconds (JVM running for 5.156)
+2020-03-09 09:50:14,648 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 09:50:14,656 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-172.17.71.110] Completed initialization in 7 ms
+2020-03-09 09:57:55,995 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 09:57:55,996 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 09:57:55,996 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 09:57:56,010 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:00:31,386 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1123967 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 10:00:31,396 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 10:00:31,397 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 10:00:31,446 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 10:00:31,446 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 10:00:31,446 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 10:00:31,447 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 10:00:31,447 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 10:00:32,305 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 10:00:32,354 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 44ms. Found 3 JPA repository interfaces.
+2020-03-09 10:00:32,663 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,681 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$34096976] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,692 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,695 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,698 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,701 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,702 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$8dfdf84b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,705 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,706 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,708 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,719 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,720 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,722 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,724 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,725 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,730 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,731 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,733 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,734 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,743 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,763 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:00:32,906 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 10:00:32,975 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1528 ms
+2020-03-09 10:00:33,099 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 10:00:33,873 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:00:34,041 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:00:34,042 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:00:34,044 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:00:35,339 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:00:35,390 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:00:35,456 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 10:00:35,491 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:00:35,524 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:00:35,559 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:00:35,589 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 10:00:36,126 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 10:00:36,266 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 10:00:36,362 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f32a31, org.springframework.security.web.context.SecurityContextPersistenceFilter@8606560, org.springframework.security.web.header.HeaderWriterFilter@4e52f5db, org.springframework.web.filter.CorsFilter@74b0cadb, org.springframework.security.web.authentication.logout.LogoutFilter@21043a8a, ir.omidashouri.mobileappws.security.AuthenticationFilter@46946773, ir.omidashouri.mobileappws.security.AuthorizationFilter@7cab9c83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6579e1c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8887d15, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62178385, org.springframework.security.web.session.SessionManagementFilter@4e97c3e7, org.springframework.security.web.access.ExceptionTranslationFilter@32c45772, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3474f8d8]
+2020-03-09 10:00:36,803 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 10:00:36,806 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 5.847 seconds (JVM running for 6.609)
+2020-03-09 10:00:37,066 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 10:00:37,073 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-172.17.71.110] Completed initialization in 6 ms
+2020-03-09 10:19:35,543 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-4] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:19:35,552 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:19:35,554 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:19:35,554 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:19:35,940 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1123967 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 10:19:35,941 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 10:19:35,942 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 10:19:36,634 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 10:19:36,658 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 23ms. Found 3 JPA repository interfaces.
+2020-03-09 10:19:36,777 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,788 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$34096976] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,792 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,798 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,800 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,802 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,803 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$8dfdf84b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,808 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,810 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,815 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,825 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,826 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,828 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,831 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,834 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,839 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,841 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,842 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,843 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,849 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,861 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:36,947 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 10:19:36,982 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1036 ms
+2020-03-09 10:19:37,096 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 10:19:37,377 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:19:37,378 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:19:37,378 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:19:37,379 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:37,415 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:37,441 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:37,468 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 10:19:37,551 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:19:37,652 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:19:37,755 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:19:37,773 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 10:19:38,028 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 10:19:38,262 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 10:19:39,505 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43ea485b, org.springframework.security.web.context.SecurityContextPersistenceFilter@15234449, org.springframework.security.web.header.HeaderWriterFilter@272b8b13, org.springframework.security.web.csrf.CsrfFilter@373f790e, org.springframework.security.web.authentication.logout.LogoutFilter@6b437e2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29aab53, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23813e2c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4004ce67, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@442fb72c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44068b79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f0ee3f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17933507, org.springframework.security.web.session.SessionManagementFilter@5998a17d, org.springframework.security.web.access.ExceptionTranslationFilter@1ff9c1bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20747322]
+2020-03-09 10:19:39,562 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 10:19:39,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 10:19:39,602 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 3.77 seconds (JVM running for 1149.405)
+2020-03-09 10:19:39,647 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration matched:
+      - @ConditionalOnEnabledResourceChain found class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityConfigurerAdapter'; @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-03-09 10:19:47,534 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 10:19:47,539 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:19:47,539 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:19:47,540 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:19:47,541 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:19:50,639 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1126322 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 10:19:50,642 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 10:19:50,642 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 10:19:50,685 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 10:19:50,685 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 10:19:50,685 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 10:19:50,686 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 10:19:50,686 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 10:19:51,557 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 10:19:51,607 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 45ms. Found 3 JPA repository interfaces.
+2020-03-09 10:19:51,918 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:51,937 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7c14210e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:51,949 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,006 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,010 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,014 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,015 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$d608afe3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,019 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,021 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,023 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,037 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,037 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,040 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,041 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,042 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,048 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,049 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,050 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,052 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,061 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,082 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:19:52,248 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 10:19:52,303 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1617 ms
+2020-03-09 10:19:52,430 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 10:19:53,202 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:19:53,210 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:19:53,210 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:19:53,213 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:53,251 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:53,295 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:19:53,336 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 10:19:53,371 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:19:53,405 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:19:53,452 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:19:53,479 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 10:19:54,017 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 10:19:54,145 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 10:19:54,237 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a404774, org.springframework.security.web.context.SecurityContextPersistenceFilter@147b6f62, org.springframework.security.web.header.HeaderWriterFilter@33599f1, org.springframework.web.filter.CorsFilter@28d4b434, org.springframework.security.web.authentication.logout.LogoutFilter@11213b4a, ir.omidashouri.mobileappws.security.AuthenticationFilter@34af6109, ir.omidashouri.mobileappws.security.AuthorizationFilter@17643196, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57afc45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8f64588, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f07afe9, org.springframework.security.web.session.SessionManagementFilter@1c4b27ee, org.springframework.security.web.access.ExceptionTranslationFilter@afabf8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@82f44d]
+2020-03-09 10:19:54,650 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 10:19:54,653 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 4.583 seconds (JVM running for 5.497)
+2020-03-09 10:19:54,768 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(4)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 10:19:54,775 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(4)-172.17.71.110] Completed initialization in 6 ms
+2020-03-09 10:20:16,873 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-4] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:20:16,874 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:20:17,138 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:20:17,138 DEBUG org.hibernate.SQL [Thread-4] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:20:51,783 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1126859 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 10:20:51,785 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 10:20:51,786 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 10:20:51,832 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 10:20:51,833 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 10:20:51,833 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 10:20:51,833 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 10:20:51,833 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 10:20:52,763 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 10:20:52,826 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 57ms. Found 3 JPA repository interfaces.
+2020-03-09 10:20:53,143 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,164 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d5ede65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,175 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,179 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,181 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,184 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.DefaultOnlyMessageResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,185 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$67536d3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,189 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,190 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,192 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,204 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,205 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,207 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,209 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,210 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,216 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,217 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,219 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,220 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,230 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,252 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 10:20:53,435 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 10:20:53,495 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1661 ms
+2020-03-09 10:20:53,660 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 10:20:54,477 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 10:20:54,483 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 10:20:54,599 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 10:20:54,603 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:20:54,981 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:20:55,100 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 10:20:55,191 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 10:20:55,300 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:20:55,396 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 10:20:55,501 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 10:20:55,527 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 10:20:56,019 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 10:20:56,145 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 10:20:56,234 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7464b48a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b672633, org.springframework.security.web.header.HeaderWriterFilter@7b3b7e62, org.springframework.web.filter.CorsFilter@4a0eedf6, org.springframework.security.web.authentication.logout.LogoutFilter@347a1fbc, ir.omidashouri.mobileappws.security.AuthenticationFilter@25833611, ir.omidashouri.mobileappws.security.AuthorizationFilter@1e0de987, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bfd9236, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65af66a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f9cde28, org.springframework.security.web.session.SessionManagementFilter@141fc0b5, org.springframework.security.web.access.ExceptionTranslationFilter@4a6fabc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4909e7dc]
+2020-03-09 10:20:56,636 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 10:20:56,639 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 5.542 seconds (JVM running for 6.972)
+2020-03-09 10:20:57,166 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(6)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 10:20:57,174 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(6)-172.17.71.110] Completed initialization in 8 ms
+2020-03-09 11:08:44,000 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 11:08:44,029 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 11:08:44,031 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 11:08:44,060 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:05:30,606 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1141189 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 13:05:30,626 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 13:05:30,626 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 13:05:30,704 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:05:30,705 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 13:05:30,705 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 13:05:30,705 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:05:30,705 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:05:34,774 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 13:05:35,126 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 307ms. Found 3 JPA repository interfaces.
+2020-03-09 13:05:36,175 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,192 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$faee26b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,202 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,206 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,209 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,223 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,223 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$54e2b585] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,227 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,228 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,231 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,244 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,245 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,247 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,249 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,249 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,256 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,257 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,271 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,273 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,283 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,311 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:05:36,963 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 13:05:37,145 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 6440 ms
+2020-03-09 13:05:37,753 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 13:05:41,603 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:05:41,610 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:05:41,610 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:05:41,613 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:05:41,691 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:05:41,744 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:05:41,794 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 13:05:41,828 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:05:41,862 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:05:41,905 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:05:41,957 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 13:05:42,773 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 13:05:44,074 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65cba191, org.springframework.security.web.context.SecurityContextPersistenceFilter@21a2a896, org.springframework.security.web.header.HeaderWriterFilter@6920b395, org.springframework.web.filter.CorsFilter@13533815, org.springframework.security.web.authentication.logout.LogoutFilter@5eb6312f, ir.omidashouri.mobileappws.security.AuthenticationFilter@43931299, ir.omidashouri.mobileappws.security.AuthorizationFilter@41cf12f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23d1d221, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@708a4190, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ce30f14, org.springframework.security.web.session.SessionManagementFilter@d4a7a4c, org.springframework.security.web.access.ExceptionTranslationFilter@33326623, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f5365ff]
+2020-03-09 13:05:44,977 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 13:05:45,112 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 13:05:45,139 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 18.132 seconds (JVM running for 21.519)
+2020-03-09 13:05:45,577 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 13:05:45,631 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-172.17.71.110] Completed initialization in 52 ms
+2020-03-09 13:13:55,102 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:13:55,103 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:13:55,105 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:13:55,105 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:14:01,652 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1142229 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 13:14:01,654 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 13:14:01,655 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 13:14:01,716 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:14:01,716 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 13:14:01,716 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 13:14:01,716 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:14:01,716 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:14:02,675 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 13:14:02,730 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 49ms. Found 3 JPA repository interfaces.
+2020-03-09 13:14:03,098 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,113 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$41e8b2c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,123 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,127 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,130 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,134 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,135 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$9bdd4199] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,138 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,139 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,141 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,153 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,154 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,156 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,158 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,158 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,164 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,165 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,167 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,168 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,198 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,219 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:14:03,457 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 13:14:03,530 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1814 ms
+2020-03-09 13:14:03,722 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 13:14:04,668 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:14:04,674 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:14:04,675 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:14:04,677 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:14:04,722 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:14:04,759 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:14:04,792 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 13:14:04,827 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:14:04,861 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:14:04,894 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:14:04,940 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 13:14:05,363 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 13:14:06,217 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14181071, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c9530e0, org.springframework.security.web.header.HeaderWriterFilter@71155eca, org.springframework.web.filter.CorsFilter@6e34db1, org.springframework.security.web.authentication.logout.LogoutFilter@104198b7, ir.omidashouri.mobileappws.security.AuthenticationFilter@76fd16da, ir.omidashouri.mobileappws.security.AuthorizationFilter@257d07be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64a7dd28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@714c01dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@713200f8, org.springframework.security.web.session.SessionManagementFilter@dea1642, org.springframework.security.web.access.ExceptionTranslationFilter@419e25b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f73d78c]
+2020-03-09 13:14:06,828 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 13:14:06,905 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 13:14:06,909 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 6.404 seconds (JVM running for 7.74)
+2020-03-09 13:14:07,444 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 13:14:07,473 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-172.17.71.110] Completed initialization in 28 ms
+2020-03-09 13:14:26,824 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:27,890 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:28,589 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:29,033 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:29,399 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:29,885 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:14:30,105 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:22:47,398 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:22:47,399 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:22:47,400 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:22:47,400 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:22:49,996 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Starting MobileAppWsApplication on ashouri-pc.imi.ir with PID 1143218 (/home/o.ashouri/Developer/GitHub/mobile-app-ws/mobile-app-web/target/classes started by o.ashouri in /home/o.ashouri/Developer/GitHub/mobile-app-ws)
+2020-03-09 13:22:49,998 DEBUG ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-09 13:22:49,999 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-03-09 13:22:50,043 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/o.ashouri/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-09 13:22:50,043 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-03-09 13:22:50,043 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in /home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/home/o.ashouri/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-03-09 13:22:50,044 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-09 13:22:50,044 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-09 13:22:50,882 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 13:22:50,934 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47ms. Found 3 JPA repository interfaces.
+2020-03-09 13:22:51,271 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,287 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9fe82262] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,297 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,300 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,303 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,308 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,309 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$f9dcb137] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,311 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,313 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,314 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,326 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,326 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,328 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,330 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,331 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,336 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,337 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,339 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,341 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,349 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,370 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 13:22:51,591 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-03-09 13:22:51,645 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1601 ms
+2020-03-09 13:22:51,828 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://localhost:3306/photo_app'
+2020-03-09 13:22:52,721 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:22:52,727 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:22:52,728 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    drop table if exists tbl_user
+2020-03-09 13:22:52,730 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_address (
+       id bigint not null auto_increment,
+        address_public_id varchar(30) not null,
+        city varchar(15),
+        country varchar(15),
+        postal_code varchar(10),
+        street_name varchar(100),
+        type varchar(10),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:22:52,789 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_password_reset_token (
+       id bigint not null auto_increment,
+        token varchar(255),
+        user_id bigint,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:22:52,825 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    create table tbl_user (
+       id bigint not null auto_increment,
+        email varchar(120),
+        email_verification_status bit,
+        email_verification_token varchar(255),
+        encrypted_password varchar(255),
+        first_name varchar(50),
+        last_name varchar(50),
+        user_public_id varchar(255) not null,
+        primary key (id)
+    ) engine=MyISAM
+2020-03-09 13:22:52,858 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_user 
+       add constraint UK_iwdti2mv3lhn2mkw55l65dspq unique (user_public_id)
+2020-03-09 13:22:52,900 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_address 
+       add constraint FKlo13i087wmqhi0h7ffjxoljrb 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:22:52,985 DEBUG org.hibernate.SQL [restartedMain] 
+    
+    alter table tbl_password_reset_token 
+       add constraint FKho06fu68pai2ifpxnwgel40fk 
+       foreign key (user_id) 
+       references tbl_user (id)
+2020-03-09 13:22:53,033 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:22:53,076 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-03-09 13:22:53,488 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 13:22:54,299 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d93a71f, org.springframework.security.web.context.SecurityContextPersistenceFilter@169403f7, org.springframework.security.web.header.HeaderWriterFilter@a687d9e, org.springframework.web.filter.CorsFilter@6823564a, org.springframework.security.web.authentication.logout.LogoutFilter@479436f0, ir.omidashouri.mobileappws.security.AuthenticationFilter@24c91ce3, ir.omidashouri.mobileappws.security.AuthorizationFilter@79e50d4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26d1b03e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7725930e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19aee633, org.springframework.security.web.session.SessionManagementFilter@23f975a3, org.springframework.security.web.access.ExceptionTranslationFilter@543bf20c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3746335b]
+2020-03-09 13:22:54,829 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 13:22:54,898 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/mobile-app-ws'
+2020-03-09 13:22:54,901 INFO ir.omidashouri.mobileappws.MobileAppWsApplication [restartedMain] Started MobileAppWsApplication in 5.323 seconds (JVM running for 6.034)
+2020-03-09 13:22:55,322 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-172.17.71.110] Initializing Servlet 'dispatcherServlet'
+2020-03-09 13:22:55,335 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-172.17.71.110] Completed initialization in 12 ms
+2020-03-09 13:23:37,238 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:23:37,261 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:23:38,189 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:23:38,195 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:23:47,409 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:23:47,413 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-10] No mapping for GET /mobile-app-ws/v3/api-docs/swagger-config
+2020-03-09 13:24:00,833 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:24:06,296 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:24:07,018 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-8] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:24:07,728 WARN org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /mobile-app-ws/v3/api-docs
+2020-03-09 13:24:49,266 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 13:24:49,267 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_address
+2020-03-09 13:24:49,267 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_password_reset_token
+2020-03-09 13:24:49,268 DEBUG org.hibernate.SQL [SpringContextShutdownHook] 
+    
+    drop table if exists tbl_user

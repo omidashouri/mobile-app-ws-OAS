@@ -1,0 +1,3 @@
+# Project exclude paths
+/mobile-app-data/target/
+/mobile-app-web/target/

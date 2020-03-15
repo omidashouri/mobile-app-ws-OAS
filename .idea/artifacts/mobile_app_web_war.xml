@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mobile-app-web:war">
+    <output-path>$PROJECT_DIR$/mobile-app-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mobile-app-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mobile-app-web-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="mobile-app-web:war exploded" />
+    </root>
+  </artifact>
+</component>

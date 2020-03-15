@@ -1,0 +1,5 @@
+
+csquid:S001129"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ
+qsquid:S1450"ZRemove the "contentType" field and declare it as a local variable in the relevant methods.(φό…Α
+¶%squid:RedundantThrowsDeclarationCheck'"„Remove the declaration of thrown exception 'org.springframework.security.core.AuthenticationException' which is a runtime exception.(ÿΉ†
+Fsquid:S1068"/Remove this unused "contentType" private field.(φό…Α

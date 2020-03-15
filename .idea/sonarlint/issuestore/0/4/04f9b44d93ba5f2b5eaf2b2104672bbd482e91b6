@@ -1,0 +1,24 @@
+
+csquid:CommentedOutCodeLineÒ"<This block of commented-out lines of code should be removed.(ØûÆó
+esquid:CallToDeprecatedMethod§"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(Œ«±K
+esquid:CallToDeprecatedMethodÔ"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(Œ«±K
+bsquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(Ôþ…
+
+csquid:S00112`"FDefine and throw a dedicated exception instead of using a generic one.(ÿ³õ¹øÿÿÿÿ
+isquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(îûñò8Ë×¬ô‹.
+Rsquid:S1854i";Remove this useless assignment to local variable "userDto".(É¡ÙÀ
+Vsquid:S1854b"?Remove this useless assignment to local variable "returnValue".(ÂŠß¼
+Wsquid:S1854Ë"?Remove this useless assignment to local variable "modelMapper".(žÉè±
+Hsquid:S1481Ë"0Remove this unused "modelMapper" local variable.(žÉè±
+}squid:S2234×"`Parameters to getUserAddress have the same names but not the same order as the method arguments.(†º¢Çûÿÿÿÿ
+fsquid:CallToDeprecatedMethodÕ"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(ôýúÖ
+ksquid:CallToDeprecatedMethodÚ"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(Œæ¡ûÿÿÿÿ
+bsquid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(Í„šÐ
+fsquid:CallToDeprecatedMethod¨"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(ôýúÖ
+asquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(Ÿ®;
+fsquid:CallToDeprecatedMethod¯"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(·ÆöË
+fsquid:CallToDeprecatedMethodã"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(„±¹½
+fsquid:CallToDeprecatedMethod°"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(ôýúÖ
+gsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(ãÜ«æúÿÿÿÿ
+fsquid:CallToDeprecatedMethodä"=Remove this use of "ControllerLinkBuilder"; it is deprecated.(ôýúÖ
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ã¯ÚÏ8ò¨Ëô‹.

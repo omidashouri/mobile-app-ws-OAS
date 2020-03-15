@@ -1,0 +1,8 @@
+
+“squid:S1488/"|Immediately return this expression instead of assigning it to the temporary variable "propertySourcesPlaceholderConfigurer".(ÎïÊ
+Vsquid:S1710"?Remove the 'PropertySources' wrapper from this annotation group(ÿ¿‚İ
+vsquid:S00116"YRename this field "ExpirationTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ùğşÿÿÿÿ
+ssquid:S00116!"VRename this field "TokenPrefix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëî ñüÿÿÿÿ
+osquid:S00116%"WRename this field "HeaderString" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÆëÚ
+qsquid:S00116("TRename this field "SignUpUrl" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹‚¤€ÿÿÿÿÿ
+gsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(¤ë¿ˆÿÿÿÿÿ

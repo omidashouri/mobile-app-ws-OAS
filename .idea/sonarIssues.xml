@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/mobile-app-web/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/AbstractRequestBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/IgnoredParameterAnnotations.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/IgnoredParameterAnnotationsWithSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/IgnoredParameterTypes.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/IgnoredParameterWithSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/OpenApiConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/RequestBodyBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/SpringDocSecurityConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/SwaggerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/controllers/v1/AuthenticationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/controllers/v1/UserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/converters/Pageable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/converters/PageableAsQueryParam.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/converters/PageableSupportConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/security/WebSecurity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/java/ir/omidashouri/mobileappws/security/WebSecurityConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mobile-app-web/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springdoc-openapi-demos/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springdoc-openapi/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springdoc-openapi/springdoc-openapi-data-rest/src/main/java/org/springdoc/core/HalProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

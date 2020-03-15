@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mobile-app-data/mobile-app-data.iml" filepath="$PROJECT_DIR$/mobile-app-data/mobile-app-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobile-app-web/mobile-app-web.iml" filepath="$PROJECT_DIR$/mobile-app-web/mobile-app-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobile-app-ws.iml" filepath="$PROJECT_DIR$/mobile-app-ws.iml" />
+    </modules>
+  </component>
+</project>
