@@ -18,7 +18,7 @@ public class AppExceptionsHandler {
     public ResponseEntity<Object> handleUserServiceException(UserServiceException exception,
                                                              WebRequest request){
 
-        ErrorMessage errorMessage = new ErrorMessage(new Date(),exception.getMessage());
+        ErrorMessage errorMessage = new ErrorMessage(new Date(),HttpStatus.BAD_REQUEST.toString(),exception.getMessage());
 
         return new ResponseEntity<>(errorMessage,
                                     new HttpHeaders(),
@@ -31,7 +31,7 @@ public ResponseEntity<Object> handleOtherException(Exception exception,
                                                          WebRequest request){
 
 //  for security change 'exception.getMessage()' to 'other exception occurred'
-    ErrorMessage errorMessage = new ErrorMessage(new Date(), exception.getMessage());
+    ErrorMessage errorMessage = new ErrorMessage(new Date(), HttpStatus.BAD_REQUEST.toString(),exception.getMessage());
 
     return new ResponseEntity<>(errorMessage,
             new HttpHeaders(),

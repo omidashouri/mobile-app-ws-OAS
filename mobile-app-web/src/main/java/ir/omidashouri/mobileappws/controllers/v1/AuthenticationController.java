@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.ResponseHeader;*/
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.headers.Header;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -21,11 +22,27 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "login")
 public class AuthenticationController {
 
-    @Operation(description = "User Login", responses = {
-/*           @ApiResponse(responseCode = "200",description = "",content = @Content(schema = @Schema(implementation = UserLoginRequestModel.class))),*/
-            @ApiResponse(responseCode = "200",
+    @Operation(description = "User Login",
+            responses = {
+           @ApiResponse(
+                   headers = {
+                           @Header(
+                                   name = "authorization",
+                                   description = "Bearer <JWT value here>",
+                                   schema = @Schema(
+                                           type = "string",
+                                           accessMode = Schema.AccessMode.READ_ONLY,
+                                           format = "uuid"
+                                   ),
+                                   required = true),
+                           @Header(name = "userid",description = "user Id description")
+                   },
+                   responseCode = "200",
+                   description = "",
+                   content = @Content(schema = @Schema(implementation = UserLoginRequestModel.class))),
+/*            @ApiResponse(responseCode = "200",
                     content = @Content(
-                            mediaType = "*/*",
+                            mediaType = "*//*",
                             schema = @Schema(
                                     type = "string",
                                     format = "uuid",
@@ -37,8 +54,10 @@ public class AuthenticationController {
                                     @ExampleObject(name = "Default Response", value = "SubscriptionResponse",
                                             summary = "Subscription Response Example", externalValue = "Subscription Response value 1")
                             }
-                    )),
-            @ApiResponse(responseCode = "404", description = "Person with such e-mail doesn't exists")
+                    )),*/
+            @ApiResponse(
+                    responseCode = "404",
+                    description = "Person with such e-mail doesn't exists")
                     })
 /*    @ApiResponses({
             @ApiResponse(code = 200,

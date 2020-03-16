@@ -1,12 +1,9 @@
 package ir.omidashouri.mobileappws.models.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.util.Date;
-
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,7 +12,9 @@ import java.util.Date;
 public class ErrorMessage {
 
     private Date timestamp;
+    private String errorCode;
+    private String errorMessage;
 
-    private String message;
+
 
 }
