@@ -3,11 +3,8 @@ package ir.omidashouri.mobileappws;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.headers.Header;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
-import io.swagger.v3.oas.models.media.StringSchema;
-import io.swagger.v3.oas.models.parameters.Parameter;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springdoc.core.GroupedOpenApi;
@@ -22,6 +19,11 @@ public class OpenApiConfig {
 
 //    http://localhost:8080/mobile-app-ws/v3/api-docs
 //    http://localhost:8080/mobile-app-ws/swagger-ui.html
+
+//    http://localhost:8080/mobile-app-ws/v3/api-docs/users
+//    if do not set 'springdoc.swagger-ui.path=/swagger-ui.html' in 'application.properties' use the following url:
+//    http://localhost:8080/mobile-app-ws/swagger-ui/index.html?configUrl=/mobile-app-ws/v3/api-docs/swagger-config#/users/getUsers
+//    or use 'http://localhost:8080/mobile-app-ws/swagger-ui/index.html?url=' then set 'http://localhost:8080/mobile-app-ws/v3/api-docs' and click 'Explore' bottom
 
     @Bean
     public OpenAPI customOpenAPI() {

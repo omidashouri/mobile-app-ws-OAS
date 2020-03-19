@@ -4,22 +4,20 @@ package ir.omidashouri.mobileappws.controllers.v1;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.ResponseHeader;*/
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.headers.Header;
 import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import ir.omidashouri.mobileappws.models.dto.UserDto;
 import ir.omidashouri.mobileappws.models.request.UserLoginRequestModel;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Tag(name = "login")
+@Tag(name = "login", description = "Authentication Sample API")
 public class AuthenticationController {
 
     @Operation(description = "User Login",

@@ -9,9 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.security.SecurityRequirements;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import ir.omidashouri.mobileappws.exceptions.AppExceptionsHandler;
 import ir.omidashouri.mobileappws.exceptions.UserServiceException;
 import ir.omidashouri.mobileappws.mapper.AddressRestMapper;
 import ir.omidashouri.mobileappws.mapper.UserDtoUserReqMapper;
@@ -19,14 +17,11 @@ import ir.omidashouri.mobileappws.models.dto.AddressDto;
 import ir.omidashouri.mobileappws.models.dto.UserDto;
 import ir.omidashouri.mobileappws.models.request.*;
 import ir.omidashouri.mobileappws.models.response.*;
-
 import ir.omidashouri.mobileappws.services.AddressService;
 import ir.omidashouri.mobileappws.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
-import org.springframework.boot.actuate.health.HttpCodeStatusMapper;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
@@ -134,9 +129,10 @@ public class UserController {
 //            consume for accepting XML or jason in RequestBody
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
             , produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public UserRest createUser(@RequestBody UserDetailsRequestModel userDetails) throws Exception {
+    public ResponseEntity<?> createUser(@RequestBody UserDetailsRequestModel userDetails) throws Exception {
 
         UserRest returnValue = new UserRest();
+        try{
 
 //        this must be username but here is email address
         if (userDetails.getFirstName().isEmpty()) {
@@ -148,6 +144,11 @@ public class UserController {
 //        BeanUtils.copyProperties(userDetails,userDto);
         userDto = userDtoUserReqMapper.UserDetailsReqToUserDto(userDetails);
 
+        //omiddo: check username is not duplicate
+/*       if(username is duplicate){
+             return conflict();
+            }
+ */
         UserDto createdUserDto = userService.createUserDto(userDto);
 
 //omiddo: change it later with mapper
@@ -155,36 +156,54 @@ public class UserController {
 
         ModelMapper modelMapper = new ModelMapper();
         returnValue = modelMapper.map(createdUserDto, UserRest.class);
-        return returnValue;
+        return ResponseEntity.ok(returnValue);
+
+        }catch (Exception ex){
+            return badRequest(ex);
+        }
     }
 
     @PutMapping(path = "/{userPublicId}",
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
             , produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 //    PathVariable is in url and RequestBody is in the body(raw) part of request
-    public UserRest updateUser(@PathVariable String userPublicId, @RequestBody UserDetailsRequestModel userDetails) {
+    public ResponseEntity<? extends Object> updateUser(@PathVariable String userPublicId, @RequestBody UserDetailsRequestModel userDetails) {
         UserRest returnValue = new UserRest();
 
-        UserDto userDto = new UserDto();
-        BeanUtils.copyProperties(userDetails, userDto);
+        try{
+            UserDto userDto = new UserDto();
+            BeanUtils.copyProperties(userDetails, userDto);
 
-        UserDto updatedUserDto = userService.updateUserDto(userPublicId, userDto);
-        BeanUtils.copyProperties(updatedUserDto, returnValue);
+            //omiddo: check if(user do not exist in database){
+            /*
+            return notFound();
+             */
+            UserDto updatedUserDto = userService.updateUserDto(userPublicId, userDto);
+            BeanUtils.copyProperties(updatedUserDto, returnValue);
 
-        return returnValue;
+            return ResponseEntity.ok(returnValue);
+        } catch (Exception ex){
+            return badRequest(ex);
+        }
     }
 
     @DeleteMapping(path = "/{userPublicId}"
             , produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public OperationStatusModel deleteUser(@PathVariable String userPublicId) {
+    public ResponseEntity<?> deleteUser(@PathVariable String userPublicId) {
 
-        OperationStatusModel operationStatusModel = new OperationStatusModel();
-        operationStatusModel.setOperationName(RequestOperationName.DELETE.name());
+        try{
 
-        userService.deleteUserDto(userPublicId);
+            OperationStatusModel operationStatusModel = new OperationStatusModel();
+            operationStatusModel.setOperationName(RequestOperationName.DELETE.name());
 
-        operationStatusModel.setOperationResult(RequestOperationStatus.SUCCESS.name());
-        return operationStatusModel;
+            userService.deleteUserDto(userPublicId);
+
+            operationStatusModel.setOperationResult(RequestOperationStatus.SUCCESS.name());
+            return ResponseEntity.ok(operationStatusModel);
+
+        } catch (Exception ex){
+            return badRequest(ex);
+        }
     }
 
     //    http://localhost:8080/v1/users/SvWcmm8yptgOAS7Cw5QtDpdDjVVXfd/addresses
@@ -352,6 +371,13 @@ public class UserController {
         return new ResponseEntity<>(
                 new ErrorMessage(new Date(), HttpStatus.BAD_REQUEST.toString(), "Bad request"),
                 HttpStatus.BAD_REQUEST
+        );
+    }
+
+    private ResponseEntity<?> conflict(){
+        return new ResponseEntity<>(
+                new ErrorMessage(new Date(),HttpStatus.CONFLICT.toString(),"Member already Exist"),
+                HttpStatus.CONFLICT
         );
     }
 
