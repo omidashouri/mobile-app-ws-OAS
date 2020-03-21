@@ -34,19 +34,37 @@ public class OpenApiConfig {
 /*                        .addParameters("myHeader1", new Parameter().in("header").schema(new StringSchema()).name("myHeader1"))
                         .addHeaders("myHeader2", new Header().description("myHeader2 header").schema(new StringSchema()))*/
                 )
-                .info(new Info().title("SpringShop API").version("3.00")
+                .info(new Info().title("SpringShop API").version("3.00").description("Mobile App API")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .addSecurityItem(
                         new SecurityRequirement().addList("bearer-jwt", Arrays.asList("read", "write")));
     }
 
     @Bean
+    public GroupedOpenApi loginApi(){
+        return GroupedOpenApi.builder()
+                .setGroup("Authentication-login")
+                .pathsToMatch("/users/login")
+                .packagesToScan("ir.omidashouri.mobileappws")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi userApi(){
+        return GroupedOpenApi.builder()
+                .setGroup("User")
+                .pathsToMatch("/v1/users/**")
+                .packagesToScan("ir.omidashouri.mobileappws")
+                .build();
+    }
+
+/*    @Bean
     public GroupedOpenApi groupOpenApi() {
         String paths[] = {"/v1/**","/users/login"};
         String packagesToscan[] = {"ir.omidashouri.mobileappws"};
         return GroupedOpenApi.builder().setGroup("users").pathsToMatch(paths).packagesToScan(packagesToscan)
                 .build();
-    }
+    }*/
 
 /*    @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
