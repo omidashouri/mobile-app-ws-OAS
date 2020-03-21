@@ -52,18 +52,56 @@ public class UserController {
 
     // http://localhost:8080/v1/users/aLIRVt88hdQ858q5AMURm1QI6DC3Je
     // in header add Accept : application/xml or application/json
+    @Operation(
+            summary = "Find User by public ID",
+            description = "Search member by the public id"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                    schema = @Schema(implementation = UserRest.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "User not found",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    )
+            }
+    )
     @GetMapping(path = "/{userPublicId}",
 //            make response as XML or JSON
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public UserRest getUser(@PathVariable String userPublicId) {
+    public ResponseEntity<?> getUser(@PathVariable String userPublicId) {
 
         UserRest returnValue = new UserRest();
 
-        UserDto userDto = userService.getUserByUserPublicId(userPublicId);
+        try {
 
-        BeanUtils.copyProperties(userDto, returnValue);
+            UserDto userDto = userService.getUserByUserPublicId(userPublicId);
+            if (userDto == null) {
+                return notFound();
+            }
 
-        return returnValue;
+            BeanUtils.copyProperties(userDto, returnValue);
+
+            return ResponseEntity.ok(returnValue);
+
+        } catch (Exception ex) {
+            return badRequest(ex);
+        }
     }
 
 /*    @ApiOperation(value = "THe Get User Details Web Service Endpoint ",
@@ -85,24 +123,24 @@ public class UserController {
                     @ApiResponse(responseCode = "404", description = "Person with such e-mail doesn't exists")})
     @ApiResponses(
             value = {
-            @ApiResponse(
-                    headers = {@Header(name = "authorization",description = "authorization description"),@Header(name = "userid")},
-                    responseCode = "200",
-                    description = "successful operation",
-                    content = @Content(
-                            array = @ArraySchema(
-                                    schema = @Schema(implementation = UserRest.class)
+                    @ApiResponse(
+                            headers = {@Header(name = "authorization", description = "authorization description"), @Header(name = "userid")},
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                    array = @ArraySchema(
+                                            schema = @Schema(implementation = UserRest.class)
+                                    )
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
                             )
                     )
-            ),
-            @ApiResponse(
-                    responseCode = "400",
-                    description = "Bad Request",
-                    content = @Content(
-                            schema = @Schema(implementation = ErrorMessage.class)
-                    )
-            )
-    })
+            })
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<?> getUsers(@RequestParam(value = "page", defaultValue = "1") int pageValue
             , @RequestParam(value = "limit", defaultValue = "25") int limitValue) {
@@ -122,9 +160,37 @@ public class UserController {
         } catch (Exception ex) {
             return badRequest(ex);
         }
-
     }
 
+    @Operation(
+            summary = "Create new user",
+            description = "create a new user"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                   schema = @Schema(implementation = UserRest.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "409",
+                            description = "Member already exist",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    )
+            }
+    )
     @PostMapping(
 //            consume for accepting XML or jason in RequestBody
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
@@ -132,37 +198,66 @@ public class UserController {
     public ResponseEntity<?> createUser(@RequestBody UserDetailsRequestModel userDetails) throws Exception {
 
         UserRest returnValue = new UserRest();
-        try{
+        try {
 
 //        this must be username but here is email address
-        if (userDetails.getFirstName().isEmpty()) {
-            throw new UserServiceException(ErrorMessages.MISSING_REQUIRED_FIELD.getErrorMessage());
-        }
+            if (userDetails.getFirstName().isEmpty()) {
+                throw new UserServiceException(ErrorMessages.MISSING_REQUIRED_FIELD.getErrorMessage());
+            }
 
-        UserDto userDto = new UserDto();
+            UserDto userDto = new UserDto();
 
 //        BeanUtils.copyProperties(userDetails,userDto);
-        userDto = userDtoUserReqMapper.UserDetailsReqToUserDto(userDetails);
+            userDto = userDtoUserReqMapper.UserDetailsReqToUserDto(userDetails);
 
-        //omiddo: check username is not duplicate
+            //omiddo: check username is not duplicate
 /*       if(username is duplicate){
              return conflict();
             }
  */
-        UserDto createdUserDto = userService.createUserDto(userDto);
+            UserDto createdUserDto = userService.createUserDto(userDto);
 
 //omiddo: change it later with mapper
 //        BeanUtils.copyProperties(createdUserDto,returnValue);
 
-        ModelMapper modelMapper = new ModelMapper();
-        returnValue = modelMapper.map(createdUserDto, UserRest.class);
-        return ResponseEntity.ok(returnValue);
+            ModelMapper modelMapper = new ModelMapper();
+            returnValue = modelMapper.map(createdUserDto, UserRest.class);
+            return ResponseEntity.ok(returnValue);
 
-        }catch (Exception ex){
+        } catch (Exception ex) {
             return badRequest(ex);
         }
     }
 
+    @Operation(
+            summary = "update user",
+            description = "update user info"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                    schema = @Schema(implementation = UserRest.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "user not found",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    )
+            }
+    )
     @PutMapping(path = "/{userPublicId}",
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
             , produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
@@ -170,7 +265,7 @@ public class UserController {
     public ResponseEntity<? extends Object> updateUser(@PathVariable String userPublicId, @RequestBody UserDetailsRequestModel userDetails) {
         UserRest returnValue = new UserRest();
 
-        try{
+        try {
             UserDto userDto = new UserDto();
             BeanUtils.copyProperties(userDetails, userDto);
 
@@ -182,26 +277,59 @@ public class UserController {
             BeanUtils.copyProperties(updatedUserDto, returnValue);
 
             return ResponseEntity.ok(returnValue);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             return badRequest(ex);
         }
     }
 
+    @Operation(
+            summary = "Delete a member",
+            description = "Delete a member"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                    schema = @Schema(implementation = OperationStatusModel.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "user not found",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    )
+            }
+    )
     @DeleteMapping(path = "/{userPublicId}"
             , produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<?> deleteUser(@PathVariable String userPublicId) {
 
-        try{
+        try {
 
             OperationStatusModel operationStatusModel = new OperationStatusModel();
             operationStatusModel.setOperationName(RequestOperationName.DELETE.name());
 
+            //omiddo: check if(user do not exist in database){
+            /*
+            return notFound();
+             */
             userService.deleteUserDto(userPublicId);
 
             operationStatusModel.setOperationResult(RequestOperationStatus.SUCCESS.name());
             return ResponseEntity.ok(operationStatusModel);
 
-        } catch (Exception ex){
+        } catch (Exception ex) {
             return badRequest(ex);
         }
     }
@@ -362,7 +490,7 @@ public class UserController {
 
     private ResponseEntity<?> notFound() {
         return new ResponseEntity<>(
-                new ErrorMessage(new Date(),HttpStatus.NOT_FOUND.toString(), "User not Found"),
+                new ErrorMessage(new Date(), HttpStatus.NOT_FOUND.toString(), "User not Found"),
                 HttpStatus.NOT_FOUND
         );
     }
@@ -374,9 +502,9 @@ public class UserController {
         );
     }
 
-    private ResponseEntity<?> conflict(){
+    private ResponseEntity<?> conflict() {
         return new ResponseEntity<>(
-                new ErrorMessage(new Date(),HttpStatus.CONFLICT.toString(),"Member already Exist"),
+                new ErrorMessage(new Date(), HttpStatus.CONFLICT.toString(), "Member already Exist"),
                 HttpStatus.CONFLICT
         );
     }

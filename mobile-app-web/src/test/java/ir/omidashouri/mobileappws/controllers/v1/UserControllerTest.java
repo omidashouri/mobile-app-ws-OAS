@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +62,9 @@ class UserControllerTest {
 
         when(userService.getUserByUserPublicId(anyString())).thenReturn(userDto);
 
-        UserRest userRest = userController.getUser(USER_PUBLIC_ID);
+        ResponseEntity<?> responseEntity = userController.getUser(USER_PUBLIC_ID);
+
+        UserRest userRest = ((UserRest) responseEntity.getBody());
 
         assertNotNull(userRest);
         assertEquals(USER_PUBLIC_ID,userRest.getUserPublicId());
