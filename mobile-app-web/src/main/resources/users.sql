@@ -6,21 +6,21 @@ INSERT INTO photo_app.tbl_user
 --       , address_id
      )
      VALUES
-     ('omidashouri@gmail.com',1,
+     ('omidashouri@gmail.com',true,
       NULL,
       '202cb962ac59075b964b07152d234b70','omid','ashouri',
       'aLIRVt88hdQ858q5AMURm1QI6DC3Je'
 --        ,NULL
       )
     ,
-    ('omidashouri1@gmail.com',1,
+    ('omidashouri1@gmail.com',true,
      NULL,
      '202cb962ac59075b964b07152d234b70','omid1','ashouri1',
      'a170JWYiLUVviIh7CjW3ftojaZMMQR'
 --       ,NULL
      )
     ,
-    ('omidashouri2@gmail.com',0,
+    ('omidashouri2@gmail.com',false,
      'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJJU1N3OEtsY2xMc2hjWGJqZm02S09kU3RFNEJjOFAiLCJleHAiOjE1NzkyNTgzNzB9.GusVFUtthTVsc04EjfPs1xzDiPdQulFplj3YwDjwav0Vu-tClkAgNaD7PAgjx5DNtRYE9YS1q-0zwJ5IawoKzg',
      '202cb962ac59075b964b07152d234b70','omid2','ashouri2',
      'XKch1CblSMJUsgUwHf3gX27revOsFB'

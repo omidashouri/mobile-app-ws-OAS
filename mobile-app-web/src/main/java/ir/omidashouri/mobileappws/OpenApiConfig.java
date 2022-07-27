@@ -25,6 +25,9 @@ public class OpenApiConfig {
 //    http://localhost:8080/mobile-app-ws/swagger-ui/index.html?configUrl=/mobile-app-ws/v3/api-docs/swagger-config#/users/getUsers
 //    or use 'http://localhost:8080/mobile-app-ws/swagger-ui/index.html?url=' then set 'http://localhost:8080/mobile-app-ws/v3/api-docs' and click 'Explore' bottom
 
+//http://localhost:8080/mobile-app-ws/swagger-ui/index.html?configUrl=/mobile-app-ws/v3/api-docs/swagger-config
+//USER: omidashouri@gmail.com   PASSWORD:   123
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
