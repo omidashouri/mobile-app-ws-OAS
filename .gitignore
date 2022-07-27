@@ -1,3 +1,8 @@
 # Project exclude paths
 /mobile-app-data/target/
 /mobile-app-web/target/
+/app.log
+logs
+.idea
+
+
