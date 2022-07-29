@@ -61,6 +61,15 @@ public class OpenApiConfig {
                 .build();
     }
 
+    @Bean
+    public GroupedOpenApi attachmentApi(){
+        return GroupedOpenApi.builder()
+                .setGroup("Attachment")
+                .pathsToMatch("/v1/attachments/**")
+                .packagesToScan("ir.omidashouri.mobileappws")
+                .build();
+    }
+
 /*    @Bean
     public GroupedOpenApi groupOpenApi() {
         String paths[] = {"/v1/**","/users/login"};
