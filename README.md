@@ -669,3 +669,7 @@ sonar.java.binaries=target/classes
 
 
 -----------------------
+
+
+next Search:
+https://stackoverflow.com/questions/5690228/spring-mvc-how-to-return-image-in-responsebody
