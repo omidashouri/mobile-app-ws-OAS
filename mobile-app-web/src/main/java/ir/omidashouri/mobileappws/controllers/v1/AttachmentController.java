@@ -3,6 +3,7 @@ package ir.omidashouri.mobileappws.controllers.v1;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -29,7 +30,40 @@ public class AttachmentController {
     private final AttachmentService attachmentService;
 
 
-    @PostMapping("/upload")
+    @Operation(
+            summary = "upload new photo",
+            description = "upload new photo to app",
+            requestBody = @RequestBody(content = @Content(
+                    mediaType = MediaType.MULTIPART_FORM_DATA_VALUE,
+                    schema = @Schema(format = "binary",type = "object")
+            ))
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "successful operation",
+                            content = @Content(
+                                    schema = @Schema(implementation = AttachmentResponse.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "400",
+                            description = "Bad Request",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "409",
+                            description = "Member already exist",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorMessage.class)
+                            )
+                    )
+            }
+    )
+    @PostMapping(path = "/upload", consumes = "multipart/form-data")
     public ResponseEntity uploadFile(@RequestParam("file") MultipartFile file) throws Exception {
 
         Attachment attachment = null;
